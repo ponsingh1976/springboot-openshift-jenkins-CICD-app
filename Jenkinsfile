@@ -84,7 +84,7 @@ pipeline {
         }
       }
     }
-    stage('Create PROD') {
+    stage('Create PROD') { 
       when {
         expression {
           openshift.withCluster() {
